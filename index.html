@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MI Salafiah Pucubf - Sekolah Islam Terbaik</title>
+    <title>MI Salafiyah Pucung - Sekolah Islam Terbaik</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -46,7 +46,6 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 5%;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .logo {
@@ -65,20 +64,6 @@
         .logo h1 {
             font-size: 1.5rem;
             font-weight: 700;
-        }
-
-        .contact-info {
-            display: flex;
-            gap: 20px;
-            font-size: 0.9rem;
-        }
-
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 5px;
         }
 
         nav {
@@ -920,90 +905,6 @@
             margin-bottom: 20px;
         }
 
-        /* News & Announcements Section */
-        .news-filter {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-
-        .filter-btn {
-            padding: 8px 16px;
-            background-color: var(--light-bg);
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            color: var(--text-color);
-            transition: all 0.3s ease;
-        }
-
-        .filter-btn.active {
-            background-color: var(--primary-color);
-            color: white;
-        }
-
-        .news-card {
-            background-color: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--card-shadow);
-            transition: transform 0.3s ease;
-        }
-
-        .news-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .news-card-img {
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .news-card-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .news-card:hover .news-card-img img {
-            transform: scale(1.05);
-        }
-
-        .news-card-content {
-            padding: 20px;
-        }
-
-        .news-category {
-            display: inline-block;
-            padding: 5px 10px;
-            background-color: var(--primary-color);
-            color: white;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-bottom: 10px;
-        }
-
-        .news-card-content h4 {
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        .news-card-content p {
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 15px;
-        }
-
-        .news-meta {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.8rem;
-            color: #999;
-        }
-
         /* PPDB Section */
         .ppdb-steps {
             display: flex;
@@ -1127,99 +1028,6 @@
             margin-right: 10px;
         }
 
-        /* E-Learning Section */
-        .login-container {
-            max-width: 500px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 8px;
-            padding: 30px;
-            box-shadow: var(--card-shadow);
-        }
-
-        .login-tabs {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 30px;
-            border-bottom: 2px solid var(--light-bg);
-        }
-
-        .login-tab {
-            flex: 1;
-            padding: 10px;
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-            color: #666;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .login-tab.active {
-            color: var(--primary-color);
-        }
-
-        .login-tab.active::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: var(--primary-color);
-        }
-
-        .login-content {
-            display: none;
-        }
-
-        .login-content.active {
-            display: block;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-
-        .feature-card {
-            background-color: white;
-            border-radius: 8px;
-            padding: 30px;
-            box-shadow: var(--card-shadow);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature-icon {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            background-color: var(--primary-color);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            margin: 0 auto 20px;
-        }
-
-        .feature-card h4 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-
-        .feature-card p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-
         /* Gallery Section */
         .gallery-filter {
             display: flex;
@@ -1309,6 +1117,7 @@
             left: 0;
             width: 100%;
             height: 100%;
+            border: none;
         }
 
         /* Contact Section */
@@ -1622,10 +1431,6 @@
             .contact-container {
                 flex-direction: column;
             }
-            
-            .feature-grid {
-                grid-template-columns: 1fr;
-            }
         }
 
         @media (max-width: 768px) {
@@ -1807,12 +1612,8 @@
     <header>
         <div class="header-top">
             <div class="logo">
-                <img src="https://picsum.photos/seed/schoollogo/50/50.jpg" alt="Logo MI Salafiah Pucubf">
-                <h1>MI Salafiah Pucubf</h1>
-            </div>
-            <div class="contact-info">
-                <a href="tel:+628123456789"><i class="fas fa-phone"></i> +62 812-3456-789</a>
-                <a href="mailto:info@misalafiahpucubf.sch.id"><i class="fas fa-envelope"></i> info@misalafiahpucubf.sch.id</a>
+                <img src="https://picsum.photos/seed/schoollogo/50/50.jpg" alt="Logo MI Salafiyah Pucung">
+                <h1>MI Salafiyah Pucung</h1>
             </div>
             <div class="menu-toggle" id="menuToggle">
                 <span></span>
@@ -1836,9 +1637,7 @@
                     </li>
                     <li><a href="#kegiatan">Kegiatan & Prestasi</a></li>
                     <li><a href="#akademik">Akademik</a></li>
-                    <li><a href="#berita">Berita & Pengumuman</a></li>
                     <li><a href="#ppdb">PPDB Online</a></li>
-                    <li><a href="#elearning">E-Learning</a></li>
                     <li><a href="#galeri">Galeri</a></li>
                     <li><a href="#kontak">Hubungi Kami</a></li>
                     <li><a href="#testimoni">Testimoni & Alumni</a></li>
@@ -1890,10 +1689,10 @@
                     <div class="principal-content">
                         <h3>Sambutan Kepala Sekolah</h3>
                         <p>Assalamu'alaikum Warahmatullahi Wabarakatuh,</p>
-                        <p>Selamat datang di website MI Salafiah Pucubf. Sebagai lembaga pendidikan Islam, kami berkomitmen untuk memberikan pendidikan terbaik yang mengintegrasikan nilai-nilai Islam dengan kurikulum nasional. Dengan didukung oleh tenaga pendidik yang profesional dan fasilitas yang memadai, kami berusaha membentuk generasi muslim yang cerdas, berakhlak mulia, dan siap menghadapi tantangan masa depan.</p>
+                        <p>Selamat datang di website MI Salafiyah Pucung. Sebagai lembaga pendidikan Islam, kami berkomitmen untuk memberikan pendidikan terbaik yang mengintegrasikan nilai-nilai Islam dengan kurikulum nasional. Dengan didukung oleh tenaga pendidik yang profesional dan fasilitas yang memadai, kami berusaha membentuk generasi muslim yang cerdas, berakhlak mulia, dan siap menghadapi tantangan masa depan.</p>
                         <p>Semoga website ini dapat memberikan informasi yang bermanfaat bagi orang tua, siswa, dan masyarakat luas. Jangan ragu untuk menghubungi kami jika Anda membutuhkan informasi lebih lanjut.</p>
                         <p>Wassalamu'alaikum Warahmatullahi Wabarakatuh,</p>
-                        <p><strong>Bapak Ahmad Fauzi, S.Pd.I</strong><br>Kepala Sekolah MI Salafiah Pucubf</p>
+                        <p><strong>Bapak Ahmad Fauzi, S.Pd.I</strong><br>Kepala Sekolah MI Salafiyah Pucung</p>
                     </div>
                 </div>
 
@@ -1906,7 +1705,7 @@
                                 <img src="https://picsum.photos/seed/news1/100/100.jpg" alt="Berita 1">
                             </div>
                             <div class="news-content">
-                                <h4>Prestasi Gemilang Siswa MI Salafiah Pucubf di Olimpiade Sains Nasional</h4>
+                                <h4>Prestasi Gemilang Siswa MI Salafiyah Pucung di Olimpiade Sains Nasional</h4>
                                 <p>Siswa kami berhasil meraih medali emas dalam Olimpiade Sains Nasional tingkat provinsi...</p>
                                 <div class="news-meta">
                                     <span><i class="far fa-calendar"></i> 15 Juni 2023</span>
@@ -1920,7 +1719,7 @@
                             </div>
                             <div class="news-content">
                                 <h4>Peresmian Laboratorium Komputer Baru</h4>
-                                <p>MI Salafiah Pucubf meresmikan laboratorium komputer baru dengan 20 unit komputer modern...</p>
+                                <p>MI Salafiyah Pucung meresmikan laboratorium komputer baru dengan 20 unit komputer modern...</p>
                                 <div class="news-meta">
                                     <span><i class="far fa-calendar"></i> 10 Juni 2023</span>
                                     <span><i class="far fa-user"></i> Admin</span>
@@ -1985,7 +1784,7 @@
                 <!-- Registration Info -->
                 <div class="registration-info fade-in">
                     <h3>Info Pendaftaran Siswa Baru</h3>
-                    <p>Bergabunglah dengan MI Salafiah Pucubf untuk memberikan pendidikan Islam terbaik bagi putra-putri Anda. Pendaftaran siswa baru tahun ajaran 2023/2024 telah dibuka!</p>
+                    <p>Bergabunglah dengan MI Salafiyah Pucung untuk memberikan pendidikan Islam terbaik bagi putra-putri Anda. Pendaftaran siswa baru tahun ajaran 2023/2024 telah dibuka!</p>
                     <div class="registration-timer">
                         <div class="timer-item">
                             <span id="days">30</span>
@@ -2029,7 +1828,7 @@
             <div class="container">
                 <div class="section-title">
                     <h2>Profil Sekolah</h2>
-                    <p>Mengenal lebih dekat MI Salafiah Pucubf</p>
+                    <p>Mengenal lebih dekat MI Salafiyah Pucung</p>
                 </div>
 
                 <!-- Profile Tabs -->
@@ -2045,10 +1844,10 @@
                 <div class="profile-content active" id="sejarah">
                     <div class="history-content">
                         <div class="history-text">
-                            <h3>Sejarah MI Salafiah Pucubf</h3>
-                            <p>MI Salafiah Pucubf didirikan pada tahun 1995 oleh para tokoh masyarakat dan ulama setempat yang peduli akan pendidikan Islam. Awalnya, sekolah ini beroperasi dengan sangat sederhana, hanya memiliki 2 kelas dengan 40 siswa.</p>
-                            <p>Seiring berjalannya waktu, dengan dukungan masyarakat dan komitmen yang kuat dari para pengurus, MI Salafiah Pucubf terus berkembang. Pada tahun 2005, sekolah pindah ke lokasi yang lebih luas dan membangun gedung permanen dengan 6 kelas.</p>
-                            <p>Hingga saat ini, MI Salafiah Pucubf telah menjadi lembaga pendidikan Islam yang diakui kualitasnya, dengan lebih dari 300 siswa dan 25 tenaga pendidik yang profesional. Kami terus berinovasi dalam metode pembelajaran sambil tetap memegang teguh nilai-nilai Islam.</p>
+                            <h3>Sejarah MI Salafiyah Pucung</h3>
+                            <p>MI Salafiyah Pucung didirikan pada tahun 1995 oleh para tokoh masyarakat dan ulama setempat yang peduli akan pendidikan Islam. Awalnya, sekolah ini beroperasi dengan sangat sederhana, hanya memiliki 2 kelas dengan 40 siswa.</p>
+                            <p>Seiring berjalannya waktu, dengan dukungan masyarakat dan komitmen yang kuat dari para pengurus, MI Salafiyah Pucung terus berkembang. Pada tahun 2005, sekolah pindah ke lokasi yang lebih luas dan membangun gedung permanen dengan 6 kelas.</p>
+                            <p>Hingga saat ini, MI Salafiyah Pucung telah menjadi lembaga pendidikan Islam yang diakui kualitasnya, dengan lebih dari 300 siswa dan 25 tenaga pendidik yang profesional. Kami terus berinovasi dalam metode pembelajaran sambil tetap memegang teguh nilai-nilai Islam.</p>
                         </div>
                         <div class="history-img">
                             <img src="https://picsum.photos/seed/history/300/200.jpg" alt="Sejarah Sekolah">
@@ -2131,108 +1930,86 @@
                     </div>
                 </div>
 
-                <!-- Guru & Staf Content -->
-                <div class="profile-content" id="guru">
-                    <div class="grid grid-4">
-                        <div class="teacher-card">
-                            <div class="teacher-img">
-                                <img src="https://picsum.photos/seed/teacher5/120/120.jpg" alt="Guru 1">
-                            </div>
-                            <h4>Ustadzah Aisyah, S.Pd.I</h4>
-                            <p>Guru Kelas 1</p>
-                            <div class="teacher-social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        <div class="teacher-card">
-                            <div class="teacher-img">
-                                <img src="https://picsum.photos/seed/teacher6/120/120.jpg" alt="Guru 2">
-                            </div>
-                            <h4>Ustadz Ahmad, S.Pd</h4>
-                            <p>Guru Kelas 2</p>
-                            <div class="teacher-social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        <div class="teacher-card">
-                            <div class="teacher-img">
-                                <img src="https://picsum.photos/seed/teacher7/120/120.jpg" alt="Guru 3">
-                            </div>
-                            <h4>Ustadzah Fatimah, S.Pd.I</h4>
-                            <p>Guru Kelas 3</p>
-                            <div class="teacher-social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        <div class="teacher-card">
-                            <div class="teacher-img">
-                                <img src="https://picsum.photos/seed/teacher8/120/120.jpg" alt="Guru 4">
-                            </div>
-                            <h4>Ustadz Rahman, S.Pd</h4>
-                            <p>Guru Kelas 4</p>
-                            <div class="teacher-social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        <div class="teacher-card">
-                            <div class="teacher-img">
-                                <img src="https://picsum.photos/seed/teacher9/120/120.jpg" alt="Guru 5">
-                            </div>
-                            <h4>Ustadzah Sarah, S.Pd.I</h4>
-                            <p>Guru Kelas 5</p>
-                            <div class="teacher-social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        <div class="teacher-card">
-                            <div class="teacher-img">
-                                <img src="https://picsum.photos/seed/teacher10/120/120.jpg" alt="Guru 6">
-                            </div>
-                            <h4>Ustadz Yusuf, S.Pd</h4>
-                            <p>Guru Kelas 6</p>
-                            <div class="teacher-social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        <div class="teacher-card">
-                            <div class="teacher-img">
-                                <img src="https://picsum.photos/seed/teacher11/120/120.jpg" alt="Guru 7">
-                            </div>
-                            <h4>Ustadzah Khadijah, S.Pd.I</h4>
-                            <p>Guru Al-Qur'an</p>
-                            <div class="teacher-social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        <div class="teacher-card">
-                            <div class="teacher-img">
-                                <img src="https://picsum.photos/seed/teacher12/120/120.jpg" alt="Guru 8">
-                            </div>
-                            <h4>Ustadz Ibrahim, S.Kom</h4>
-                            <p>Guru TIK</p>
-                            <div class="teacher-social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+<!-- Guru & Staf Content -->
+<div class="profile-content" id="guru">
+    <style>
+        .staff-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .staff-table th, .staff-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .staff-table th {
+            background-color: #343a40;
+            color: white;
+            font-weight: bold;
+        }
+        .staff-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .staff-table tr:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+    
+    <table class="staff-table">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Nama</th>
+                <th>Mapel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ustadz wisnu, S.Pd.I</td>
+                <td>Kelas 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ustadz Ahmad, S.Pd</td>
+                <td>Kelas 2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ustadzah Fatimah, S.Pd.I</td>
+                <td>Kelas 3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ustadz Rahman, S.Pd</td>
+                <td>Kelas 4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Ustadzah Sarah, S.Pd.I</td>
+                <td>Kelas 5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Ustadz Yusuf, S.Pd</td>
+                <td>Kelas 6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Ustadzah Khadijah, S.Pd.I</td>
+                <td>Al-Qur'an</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Ustadz Ibrahim, S.Kom</td>
+                <td>TIK</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
                 <!-- Fasilitas Content -->
                 <div class="profile-content" id="fasilitas">
                     <div class="grid grid-3">
@@ -2261,7 +2038,7 @@
                             <img src="https://picsum.photos/seed/mosque/400/250.jpg" alt="Masjid">
                             <div class="facility-overlay">
                                 <h4>Masjid</h4>
-                                <p>Masjid Jami' MI Salafiah untuk kegiatan keagamaan</p>
+                                <p>Masjid Jami' MI Salafiyah Pucung untuk kegiatan keagamaan</p>
                             </div>
                         </div>
                         <div class="facility-card">
@@ -2328,7 +2105,7 @@
                         </div>
                         <div class="achievement-content">
                             <span class="achievement-badge">Ekstrakurikuler</span>
-                            <h4>Pramuka MI Salafiah</h4>
+                            <h4>Pramuka MI Salafiyah</h4>
                             <p>Kegiatan pramuka rutin setiap minggu untuk melatih kedisiplinan dan kemandirian siswa.</p>
                         </div>
                     </div>
@@ -2356,7 +2133,7 @@
 
                 <div class="section-title" style="margin-top: 60px;">
                     <h2>Alumni Berprestasi</h2>
-                    <p>Kisah sukses alumni MI Salafiah Pucubf</p>
+                    <p>Kisah sukses alumni MI Salafiyah Pucung</p>
                 </div>
 
                 <div class="grid grid-3">
@@ -2368,7 +2145,7 @@
                             <h4>Dr. Ahmad Rizki, M.Sc.</h4>
                             <p>Alumni 2005 - Dosen Universitas Indonesia</p>
                             <div class="alumni-quote">
-                                "MI Salafiah Pucubf telah memberikan fondasi pendidikan Islam yang kuat yang membentuk karakter saya hingga saat ini."
+                                "MI Salafiyah Pucung telah memberikan fondasi pendidikan Islam yang kuat yang membentuk karakter saya hingga saat ini."
                             </div>
                         </div>
                     </div>
@@ -2380,7 +2157,7 @@
                             <h4>Siti Nurhaliza, S.H.</h4>
                             <p>Alumni 2008 - Pengacara Sukses</p>
                             <div class="alumni-quote">
-                                "Pendidikan di MI Salafiah Pucubf tidak hanya memberikan ilmu, tetapi juga membentuk kepribadian yang tangguh."
+                                "Pendidikan di MI Salafiyah Pucung tidak hanya memberikan ilmu, tetapi juga membentuk kepribadian yang tangguh."
                             </div>
                         </div>
                     </div>
@@ -2392,7 +2169,7 @@
                             <h4>Muhammad Fadli, S.T.</h4>
                             <p>Alumni 2010 - Engineer di Perusahaan Multinasional</p>
                             <div class="alumni-quote">
-                                "Berkat bimbingan guru-guru hebat di MI Salafiah Pucubf, saya bisa meraih mimpi saya menjadi seorang engineer."
+                                "Berkat bimbingan guru-guru hebat di MI Salafiyah Pucung, saya bisa meraih mimpi saya menjadi seorang engineer."
                             </div>
                         </div>
                     </div>
@@ -2405,21 +2182,20 @@
             <div class="container">
                 <div class="section-title">
                     <h2>Akademik</h2>
-                    <p>Informasi lengkap seputar pembelajaran di MI Salafiah Pucubf</p>
+                    <p>Informasi lengkap seputar pembelajaran di MI Salafiyah Pucung</p>
                 </div>
 
                 <!-- Curriculum Tabs -->
                 <div class="curriculum-tabs">
                     <button class="curriculum-tab active" data-curriculum="kurikulum">Kurikulum</button>
                     <button class="curriculum-tab" data-curriculum="jadwal">Jadwal Pelajaran</button>
-                    <button class="curriculum-tab" data-curriculum="materi">Materi Online</button>
                     <button class="curriculum-tab" data-curriculum="program">Program Unggulan</button>
                 </div>
 
                 <!-- Kurikulum Content -->
                 <div class="curriculum-content active" id="kurikulum">
                     <h3>Kurikulum yang Digunakan</h3>
-                    <p>MI Salafiah Pucubf menggunakan Kurikulum Merdeka yang dikembangkan oleh Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi Republik Indonesia. Kurikulum ini dirancang untuk mengembangkan kompetensi siswa secara holistik, mencakup aspek spiritual, sosial, kognitif, psikomotor, dan afektif.</p>
+                    <p>MI Salafiyah Pucung menggunakan Kurikulum Merdeka yang dikembangkan oleh Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi Republik Indonesia. Kurikulum ini dirancang untuk mengembangkan kompetensi siswa secara holistik, mencakup aspek spiritual, sosial, kognitif, psikomotor, dan afektif.</p>
                     <p>Selain kurikulum nasional, kami juga mengintegrasikan:</p>
                     <ul>
                         <li>Kurikulum Tahfidz Al-Qur'an untuk membentuk generasi yang hafal dan mencintai Al-Qur'an</li>
@@ -2513,21 +2289,6 @@
                     </table>
                 </div>
 
-                <!-- Materi Online Content -->
-                <div class="curriculum-content" id="materi">
-                    <h3>Materi & Tugas Online</h3>
-                    <p>MI Salafiah Pucubf menyediakan platform pembelajaran online untuk mendukung proses belajar mengajar. Siswa dapat mengakses materi pelajaran, mengerjakan tugas, dan mengikuti ujian secara online melalui portal E-Learning kami.</p>
-                    <p>Fitur yang tersedia:</p>
-                    <ul>
-                        <li>Materi pelajaran dalam format digital (PDF, video, presentasi)</li>
-                        <li>Tugas online dengan batas waktu pengumpulan</li>
-                        <li>Quiz dan ujian online</li>
-                        <li>Forum diskusi antara siswa dan guru</li>
-                        <li>Rapor digital yang dapat diakses oleh orang tua</li>
-                    </ul>
-                    <p>Untuk mengakses platform E-Learning, siswa dan guru dapat login melalui halaman <a href="#elearning">E-Learning</a> dengan menggunakan akun yang telah disediakan.</p>
-                </div>
-
                 <!-- Program Unggulan Content -->
                 <div class="curriculum-content" id="program">
                     <h3>Program Unggulan</h3>
@@ -2569,232 +2330,12 @@
             </div>
         </section>
 
-        <!-- Berita & Pengumuman Section -->
-        <section id="berita" class="section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Berita & Pengumuman</h2>
-                    <p>Update terbaru seputar kegiatan dan informasi penting</p>
-                </div>
-
-                <!-- News Filter -->
-                <div class="news-filter">
-                    <button class="filter-btn active" data-filter="all">Semua</button>
-                    <button class="filter-btn" data-filter="berita">Berita</button>
-                    <button class="filter-btn" data-filter="pengumuman">Pengumuman</button>
-                    <button class="filter-btn" data-filter="kegiatan">Kegiatan</button>
-                    <button class="filter-btn" data-filter="prestasi">Prestasi</button>
-                </div>
-
-                <!-- News Grid -->
-                <div class="grid grid-3" id="newsGrid">
-                    <div class="news-card" data-category="berita">
-                        <div class="news-card-img">
-                            <img src="https://picsum.photos/seed/news4/400/200.jpg" alt="Berita 4">
-                        </div>
-                        <div class="news-card-content">
-                            <span class="news-category">Berita</span>
-                            <h4>Prestasi Gemilang Siswa MI Salafiah Pucubf di Olimpiade Sains Nasional</h4>
-                            <p>Siswa kami berhasil meraih medali emas dalam Olimpiade Sains Nasional tingkat provinsi setelah mengalahkan 50 peserta dari berbagai sekolah di Jawa Barat.</p>
-                            <div class="news-meta">
-                                <span><i class="far fa-calendar"></i> 15 Juni 2023</span>
-                                <span><i class="far fa-user"></i> Admin</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-card" data-category="pengumuman">
-                        <div class="news-card-img">
-                            <img src="https://picsum.photos/seed/news5/400/200.jpg" alt="Pengumuman 1">
-                        </div>
-                        <div class="news-card-content">
-                            <span class="news-category">Pengumuman</span>
-                            <h4>Pendaftaran Siswa Baru Tahun Ajaran 2023/2024</h4>
-                            <p>Pendaftaran siswa baru telah dibuka mulai 1 Juni 2023. Ayah bunda segera daftarkan putra-putri Anda untuk bergabung dengan MI Salafiah Pucubf.</p>
-                            <div class="news-meta">
-                                <span><i class="far fa-calendar"></i> 1 Juni 2023</span>
-                                <span><i class="far fa-user"></i> Admin</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-card" data-category="kegiatan">
-                        <div class="news-card-img">
-                            <img src="https://picsum.photos/seed/news6/400/200.jpg" alt="Kegiatan 1">
-                        </div>
-                        <div class="news-card-content">
-                            <span class="news-category">Kegiatan</span>
-                            <h4>Peringatan Nabi Muhammad SAW 1444 H</h4>
-                            <p>Seluruh warga sekolah mengikuti peringatan Maulid Nabi Muhammad SAW dengan berbagai kegiatan, mulai dari lomba ceramah hingga pawai taaruf.</p>
-                            <div class="news-meta">
-                                <span><i class="far fa-calendar"></i> 28 Oktober 2023</span>
-                                <span><i class="far fa-user"></i> Admin</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-card" data-category="prestasi">
-                        <div class="news-card-img">
-                            <img src="https://picsum.photos/seed/news7/400/200.jpg" alt="Prestasi 1">
-                        </div>
-                        <div class="news-card-content">
-                            <span class="news-category">Prestasi</span>
-                            <h4>Juara Umum dalam Festival Seni Islami Tingkat Kabupaten</h4>
-                            <p>Tim seni MI Salafiah Pucubf berhasil meraih juara umum dalam Festival Seni Islami tingkat kabupaten dengan total 5 medali emas, 3 perak, dan 2 perunggu.</p>
-                            <div class="news-meta">
-                                <span><i class="far fa-calendar"></i> 20 September 2023</span>
-                                <span><i class="far fa-user"></i> Admin</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-card" data-category="berita">
-                        <div class="news-card-img">
-                            <img src="https://picsum.photos/seed/news8/400/200.jpg" alt="Berita 5">
-                        </div>
-                        <div class="news-card-content">
-                            <span class="news-category">Berita</span>
-                            <h4>Peresmian Laboratorium Komputer Baru</h4>
-                            <p>MI Salafiah Pucubf meresmikan laboratorium komputer baru dengan 20 unit komputer modern untuk mendukung pembelajaran TIK dan program digital literacy.</p>
-                            <div class="news-meta">
-                                <span><i class="far fa-calendar"></i> 10 Juni 2023</span>
-                                <span><i class="far fa-user"></i> Admin</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-card" data-category="pengumuman">
-                        <div class="news-card-img">
-                            <img src="https://picsum.photos/seed/news9/400/200.jpg" alt="Pengumuman 2">
-                        </div>
-                        <div class="news-card-content">
-                            <span class="news-category">Pengumuman</span>
-                            <h4>Libur Semester Ganjil</h4>
-                            <p>Sekolah akan libur mulai 24 Desember 2023 hingga 8 Januari 2024. Kegiatan belajar mengajar akan dimulai kembali pada 9 Januari 2024.</p>
-                            <div class="news-meta">
-                                <span><i class="far fa-calendar"></i> 20 Desember 2023</span>
-                                <span><i class="far fa-user"></i> Admin</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Detailed Academic Calendar -->
-                <div class="section-title" style="margin-top: 60px;">
-                    <h2>Kalender Akademik Detail</h2>
-                    <p>Jadwal kegiatan akademik tahun ajaran 2023/2024</p>
-                </div>
-
-                <table class="schedule-table">
-                    <thead>
-                        <tr>
-                            <th>Tanggal</th>
-                            <th>Kegiatan</th>
-                            <th>Keterangan</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>10-14 Juli 2023</td>
-                            <td>Masa Orientasi Siswa (MOS)</td>
-                            <td>Peserta didik baru kelas 1</td>
-                        </tr>
-                        <tr>
-                            <td>17 Juli 2023</td>
-                            <td>Awal Tahun Ajaran 2023/2024</td>
-                            <td>Pembelajaran dimulai</td>
-                        </tr>
-                        <tr>
-                            <td>18-22 September 2023</td>
-                            <td>Ujian Tengah Semester (UTS) Ganjil</td>
-                            <td>Semua kelas</td>
-                        </tr>
-                        <tr>
-                            <td>23-30 September 2023</td>
-                            <td>Libur UTS</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>2 Oktober 2023</td>
-                            <td>Masuk kembali</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>28 Oktober 2023</td>
-                            <td>Peringatan Maulid Nabi Muhammad SAW</td>
-                            <td>Kegiatan di sekolah</td>
-                        </tr>
-                        <tr>
-                            <td>4-8 Desember 2023</td>
-                            <td>Ujian Akhir Semester (UAS) Ganjil</td>
-                            <td>Semua kelas</td>
-                        </tr>
-                        <tr>
-                            <td>11-22 Desember 2023</td>
-                            <td>Penilaian Akhir Semester (PAS) Ganjil</td>
-                            <td>Semua kelas</td>
-                        </tr>
-                        <tr>
-                            <td>24 Desember 2023 - 8 Januari 2024</td>
-                            <td>Libur Semester Ganjil</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>9 Januari 2024</td>
-                            <td>Awal Semester Genap</td>
-                            <td>Pembelajaran dimulai</td>
-                        </tr>
-                        <tr>
-                            <td>18-22 Maret 2024</td>
-                            <td>Ujian Tengah Semester (UTS) Genap</td>
-                            <td>Semua kelas</td>
-                        </tr>
-                        <tr>
-                            <td>23-30 Maret 2024</td>
-                            <td>Libur UTS</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>1 April 2024</td>
-                            <td>Masuk kembali</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>10-14 April 2024</td>
-                            <td>Ujian Sekolah (US)</td>
-                            <td>Kelas 6</td>
-                        </tr>
-                        <tr>
-                            <td>22-27 April 2024</td>
-                            <td>Ujian Akhir Semester (UAS) Genap</td>
-                            <td>Semua kelas</td>
-                        </tr>
-                        <tr>
-                            <td>29 April - 10 Mei 2024</td>
-                            <td>Penilaian Akhir Semester (PAS) Genap</td>
-                            <td>Semua kelas</td>
-                        </tr>
-                        <tr>
-                            <td>13-15 Mei 2024</td>
-                            <td>Pengumuman Kelulusan</td>
-                            <td>Kelas 6</td>
-                        </tr>
-                        <tr>
-                            <td>20-24 Mei 2024</td>
-                            <td>Pembagian Rapor</td>
-                            <td>Semua kelas</td>
-                        </tr>
-                        <tr>
-                            <td>25 Mei 2024</td>
-                            <td>Akhir Tahun Ajaran 2023/2024</td>
-                            <td>-</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
         <!-- PPDB Section -->
-        <section id="ppdb" class="section" style="background-color: var(--light-bg);">
+        <section id="ppdb" class="section">
             <div class="container">
                 <div class="section-title">
                     <h2>Penerimaan Siswa Baru</h2>
-                    <p>Informasi lengkap pendaftaran siswa baru MI Salafiah Pucubf</p>
+                    <p>Informasi lengkap pendaftaran siswa baru MI Salafiyah Pucung</p>
                 </div>
 
                 <!-- PPDB Steps -->
@@ -2916,139 +2457,10 @@
                             <ul>
                                 <li><i class="fas fa-phone"></i> +62 812-3456-789 (Ustadzah Aisyah)</li>
                                 <li><i class="fas fa-phone"></i> +62 813-9876-543 (Ustadz Ahmad)</li>
-                                <li><i class="fas fa-envelope"></i> ppdb@misalafiahpucubf.sch.id</li>
-                                <li><i class="fas fa-map-marker-alt"></i> MI Salafiah Pucubf, Jl. Pendidikan No. 123</li>
+                                <li><i class="fas fa-envelope"></i> ppdb@misalafiyahpucung.sch.id</li>
+                                <li><i class="fas fa-map-marker-alt"></i> MI Salafiyah Pucung, Jl. Pendidikan No. 123</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- E-Learning Section -->
-        <section id="elearning" class="section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>E-Learning / Portal Siswa & Guru</h2>
-                    <p>Platform pembelajaran digital MI Salafiah Pucubf</p>
-                </div>
-
-                <!-- Login Container -->
-                <div class="login-container">
-                    <div class="login-tabs">
-                        <button class="login-tab active" data-login="siswa">Login Siswa</button>
-                        <button class="login-tab" data-login="guru">Login Guru</button>
-                        <button class="login-tab" data-login="orangtua">Login Orang Tua</button>
-                    </div>
-
-                    <!-- Siswa Login -->
-                    <div class="login-content active" id="siswa">
-                        <form id="studentLoginForm">
-                            <div class="form-group">
-                                <label for="studentNis">NIS</label>
-                                <input type="text" id="studentNis" class="form-control" placeholder="Masukkan NIS Anda" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="studentPassword">Password</label>
-                                <input type="password" id="studentPassword" class="form-control" placeholder="Masukkan password Anda" required>
-                            </div>
-                            <div class="form-group">
-                                <label>
-                                    <input type="checkbox" name="remember"> Ingat saya
-                                </label>
-                            </div>
-                            <button type="submit" class="btn">Login</button>
-                            <p style="margin-top: 15px; text-align: center;">
-                                <a href="#" style="color: var(--primary-color);">Lupa password?</a>
-                            </p>
-                        </form>
-                    </div>
-
-                    <!-- Guru Login -->
-                    <div class="login-content" id="guru">
-                        <form id="teacherLoginForm">
-                            <div class="form-group">
-                                <label for="teacherNip">NIP</label>
-                                <input type="text" id="teacherNip" class="form-control" placeholder="Masukkan NIP Anda" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="teacherPassword">Password</label>
-                                <input type="password" id="teacherPassword" class="form-control" placeholder="Masukkan password Anda" required>
-                            </div>
-                            <div class="form-group">
-                                <label>
-                                    <input type="checkbox" name="remember"> Ingat saya
-                                </label>
-                            </div>
-                            <button type="submit" class="btn">Login</button>
-                            <p style="margin-top: 15px; text-align: center;">
-                                <a href="#" style="color: var(--primary-color);">Lupa password?</a>
-                            </p>
-                        </form>
-                    </div>
-
-                    <!-- Orang Tua Login -->
-                    <div class="login-content" id="orangtua">
-                        <form id="parentLoginForm">
-                            <div class="form-group">
-                                <label for="parentUsername">Username</label>
-                                <input type="text" id="parentUsername" class="form-control" placeholder="Masukkan username Anda" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="parentPassword">Password</label>
-                                <input type="password" id="parentPassword" class="form-control" placeholder="Masukkan password Anda" required>
-                            </div>
-                            <div class="form-group">
-                                <label>
-                                    <input type="checkbox" name="remember"> Ingat saya
-                                </label>
-                            </div>
-                            <button type="submit" class="btn">Login</button>
-                            <p style="margin-top: 15px; text-align: center;">
-                                <a href="#" style="color: var(--primary-color);">Lupa password?</a>
-                            </p>
-                        </form>
-                    </div>
-                </div>
-
-                <!-- E-Learning Features -->
-                <div class="section-title" style="margin-top: 60px;">
-                    <h2>Fitur E-Learning</h2>
-                    <p>Kemudahan belajar di era digital</p>
-                </div>
-
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-book-open"></i>
-                        </div>
-                        <h4>Materi Pembelajaran</h4>
-                        <p>Akses materi pembelajaran kapan saja dan di mana saja melalui berbagai format (teks, video, audio, dan presentasi).</p>
-                        <a href="#" class="btn">Pelajari Lebih Lanjut</a>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-tasks"></i>
-                        </div>
-                        <h4>Tugas Online</h4>
-                        <p>Kerjakan tugas secara online dengan batas waktu yang jelas dan dapatkan feedback langsung dari guru.</p>
-                        <a href="#" class="btn">Pelajari Lebih Lanjut</a>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-clipboard-check"></i>
-                        </div>
-                        <h4>Ujian Online</h4>
-                        <p>Ikuti ujian secara online dengan sistem yang aman dan hasil yang dapat dilihat secara real-time.</p>
-                        <a href="#" class="btn">Pelajari Lebih Lanjut</a>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                        <h4>Forum Diskusi</h4>
-                        <p>Diskusikan materi pelajaran dengan teman dan guru melalui forum diskusi interaktif.</p>
-                        <a href="#" class="btn">Pelajari Lebih Lanjut</a>
                     </div>
                 </div>
             </div>
@@ -3059,7 +2471,7 @@
             <div class="container">
                 <div class="section-title">
                     <h2>Galeri</h2>
-                    <p>Dokumentasi kegiatan dan momen berharga di MI Salafiah Pucubf</p>
+                    <p>Dokumentasi kegiatan dan momen berharga di MI Salafiyah Pucung</p>
                 </div>
 
                 <!-- Gallery Filter -->
@@ -3155,7 +2567,7 @@
 
                 <div class="grid grid-2">
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Profil MI Salafiah Pucubf" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Profil MI Salafiyah Pucung" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Wisuda Kelas 6 Tahun 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -3182,7 +2594,7 @@
                             </div>
                             <div class="contact-details">
                                 <h4>Alamat</h4>
-                                <p>Jl. Pendidikan No. 123, Desa Pucubf, Kecamatan Sukamaju, Kabupaten Sejahtera, Provinsi Jawa Barat 12345</p>
+                                <p>Jl. Pendidikan No. 123, Desa Pucung, Kecamatan Sukamaju, Kabupaten Sejahtera, Provinsi Jawa Barat 12345</p>
                             </div>
                         </div>
 
@@ -3203,8 +2615,8 @@
                             </div>
                             <div class="contact-details">
                                 <h4>Email</h4>
-                                <p>info@misalafiahpucubf.sch.id</p>
-                                <p>admin@misalafiahpucubf.sch.id</p>
+                                <p>info@misalafiyahpucung.sch.id</p>
+                                <p>admin@misalafiyahpucung.sch.id</p>
                             </div>
                         </div>
 
@@ -3274,7 +2686,7 @@
                 <div class="grid grid-3">
                     <div class="testimonial-card">
                         <div class="testimonial-content">
-                            "MI Salafiah Pucubf telah memberikan pendidikan terbaik untuk anak saya. Selain mendapatkan ilmu pengetahuan, anak saya juga dibentuk karakternya sesuai nilai-nilai Islam. Terima kasih kepada semua guru dan staf yang telah mendidik anak saya dengan penuh kasih sayang."
+                            "MI Salafiyah Pucung telah memberikan pendidikan terbaik untuk anak saya. Selain mendapatkan ilmu pengetahuan, anak saya juga dibentuk karakternya sesuai nilai-nilai Islam. Terima kasih kepada semua guru dan staf yang telah mendidik anak saya dengan penuh kasih sayang."
                         </div>
                         <div class="testimonial-author">
                             <div class="author-img">
@@ -3288,7 +2700,7 @@
                     </div>
                     <div class="testimonial-card">
                         <div class="testimonial-content">
-                            "Saya sangat senang belajar di MI Salafiah Pucubf. Guru-gurunya sangat baik dan sabar mengajarkan kami. Saya juga senang bisa menghafal Al-Qur'an sambil belajar pelajaran lainnya. Teman-teman saya juga sangat baik dan kami selalu belajar bersama."
+                            "Saya sangat senang belajar di MI Salafiyah Pucung. Guru-gurunya sangat baik dan sabar mengajarkan kami. Saya juga senang bisa menghafal Al-Qur'an sambil belajar pelajaran lainnya. Teman-teman saya juga sangat baik dan kami selalu belajar bersama."
                         </div>
                         <div class="testimonial-author">
                             <div class="author-img">
@@ -3302,7 +2714,7 @@
                     </div>
                     <div class="testimonial-card">
                         <div class="testimonial-content">
-                            "Sebagai orang tua, saya merasa tenang mempercayakan pendidikan anak saya di MI Salafiah Pucubf. Lingkungan sekolah yang islami dan fasilitas yang memadai membuat anak saya betah belajar di sini. Prestasi anak saya juga semakin meningkat sejak bersekolah di sini."
+                            "Sebagai orang tua, saya merasa tenang mempercayakan pendidikan anak saya di MI Salafiyah Pucung. Lingkungan sekolah yang islami dan fasilitas yang memadai membuat anak saya betah belajar di sini. Prestasi anak saya juga semakin meningkat sejak bersekolah di sini."
                         </div>
                         <div class="testimonial-author">
                             <div class="author-img">
@@ -3327,7 +2739,7 @@
                             <h4>Dr. Ahmad Rizki, M.Sc.</h4>
                             <p>Alumni 2005 - Dosen Universitas Indonesia</p>
                             <div class="alumni-quote">
-                                "MI Salafiah Pucubf telah memberikan fondasi pendidikan Islam yang kuat yang membentuk karakter saya hingga saat ini. Saya sangat berterima kasih kepada para guru yang telah membimbing saya dengan sabar dan penuh kasih."
+                                "MI Salafiyah Pucung telah memberikan fondasi pendidikan Islam yang kuat yang membentuk karakter saya hingga saat ini. Saya sangat berterima kasih kepada para guru yang telah membimbing saya dengan sabar dan penuh kasih."
                             </div>
                         </div>
                     </div>
@@ -3339,7 +2751,7 @@
                             <h4>Siti Nurhaliza, S.H.</h4>
                             <p>Alumni 2008 - Pengacara Sukses</p>
                             <div class="alumni-quote">
-                                "Pendidikan di MI Salafiah Pucubf tidak hanya memberikan ilmu, tetapi juga membentuk kepribadian yang tangguh. Nilai-nilai Islam yang saya dapatkan di sini menjadi bekal saya dalam menjalani kehidupan profesional."
+                                "Pendidikan di MI Salafiyah Pucung tidak hanya memberikan ilmu, tetapi juga membentuk kepribadian yang tangguh. Nilai-nilai Islam yang saya dapatkan di sini menjadi bekal saya dalam menjalani kehidupan profesional."
                             </div>
                         </div>
                     </div>
@@ -3351,7 +2763,7 @@
                             <h4>Muhammad Fadli, S.T.</h4>
                             <p>Alumni 2010 - Engineer di Perusahaan Multinasional</p>
                             <div class="alumni-quote">
-                                "Berkat bimbingan guru-guru hebat di MI Salafiah Pucubf, saya bisa meraih mimpi saya menjadi seorang engineer. Saya berharap sekolah ini terus berkembang dan melahirkan generasi yang sukses."
+                                "Berkat bimbingan guru-guru hebat di MI Salafiyah Pucung, saya bisa meraih mimpi saya menjadi seorang engineer. Saya berharap sekolah ini terus berkembang dan melahirkan generasi yang sukses."
                             </div>
                         </div>
                     </div>
@@ -3376,10 +2788,10 @@
                 <div class="footer-column">
                     <h4>Informasi</h4>
                     <ul>
-                        <li><a href="#berita">Berita & Pengumuman</a></li>
                         <li><a href="#akademik">Kalender Akademik</a></li>
                         <li><a href="#ppdb">Pendaftaran Siswa Baru</a></li>
-                        <li><a href="#elearning">E-Learning</a></li>
+                        <li><a href="#galeri">Galeri</a></li>
+                        <li><a href="#testimoni">Alumni</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -3394,9 +2806,9 @@
                 <div class="footer-column">
                     <h4>Kontak</h4>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Jl. Pendidikan No. 123, Desa Pucubf</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Pendidikan No. 123, Desa Pucung</li>
                         <li><i class="fas fa-phone"></i> (0261) 123456</li>
-                        <li><i class="fas fa-envelope"></i> info@misalafiahpucubf.sch.id</li>
+                        <li><i class="fas fa-envelope"></i> info@misalafiyahpucung.sch.id</li>
                         <li>
                             <div class="social-links" style="margin-top: 15px;">
                                 <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
@@ -3409,7 +2821,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 MI Salafiah Pucubf. Hak Cipta Dilindungi.</p>
+                <p>&copy; 2023 MI Salafiyah Pucung. Hak Cipta Dilindungi.</p>
             </div>
         </div>
     </footer>
@@ -3595,43 +3007,6 @@
             });
         });
 
-        // Login Tabs
-        const loginTabs = document.querySelectorAll('.login-tab');
-        const loginContents = document.querySelectorAll('.login-content');
-
-        loginTabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const loginId = tab.getAttribute('data-login');
-                
-                loginTabs.forEach(t => t.classList.remove('active'));
-                loginContents.forEach(c => c.classList.remove('active'));
-                
-                tab.classList.add('active');
-                document.getElementById(loginId).classList.add('active');
-            });
-        });
-
-        // News Filter
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const newsCards = document.querySelectorAll('.news-card');
-
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const filter = btn.getAttribute('data-filter');
-                
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                
-                newsCards.forEach(card => {
-                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
-
         // Gallery Filter
         const galleryFilterBtns = document.querySelectorAll('.gallery-filter button');
         const galleryItems = document.querySelectorAll('.gallery-item');
@@ -3667,7 +3042,7 @@
                 
                 modalImage.src = img.src;
                 modalTitle.textContent = title;
-                modalDescription.textContent = "Ini adalah deskripsi untuk gambar " + title + ". Kegiatan ini merupakan bagian dari program unggulan MI Salafiah Pucubf untuk mengembangkan potensi siswa secara optimal.";
+                modalDescription.textContent = "Ini adalah deskripsi untuk gambar " + title + ". Kegiatan ini merupakan bagian dari program unggulan MI Salafiyah Pucung untuk mengembangkan potensi siswa secara optimal.";
                 
                 galleryModal.classList.add('active');
             });
@@ -3687,24 +3062,6 @@
         document.getElementById('registrationForm').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Terima kasih! Pendaftaran Anda telah kami terima. Panitia PPDB akan menghubungi Anda segera.');
-            this.reset();
-        });
-
-        document.getElementById('studentLoginForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Login berhasil! Anda akan diarahkan ke portal siswa.');
-            this.reset();
-        });
-
-        document.getElementById('teacherLoginForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Login berhasil! Anda akan diarahkan ke portal guru.');
-            this.reset();
-        });
-
-        document.getElementById('parentLoginForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Login berhasil! Anda akan diarahkan ke portal orang tua.');
             this.reset();
         });
 
